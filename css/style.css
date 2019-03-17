@@ -108,8 +108,27 @@ main{
     margin: 0 0 0 50px;
     font-size: 16px;
 }
+.userInfo .hello{
+    background: #e6686a;
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 4px 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.userInfo .hello .triangle{
+    display: block;
+    border: 10px solid transparent;
+    width: 0px;
+    border-left-color: #e6686a;
+    border-top-width: 0px;
+    position: absolute;
+    left: 4px;
+    top: 100%;
+}
 .userInfo h1{
-
+    margin-top: 20px;
 }
 .userInfo hr{
     margin: 20px auto;
@@ -118,13 +137,13 @@ main{
     width: 30%;
     float: left;
     font-weight: bold;
-    line-height: 40px;
+    line-height: 35px;
 }
 .userInfo dd{
     width:70%;
     float: left;
     color: #9da0a7;
-    line-height: 40px;
+    line-height: 35px;
 }
 main footer{
     width: 100%;
