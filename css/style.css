@@ -9,8 +9,8 @@
     overflow: hidden;
  }
 body{
-    background: #eeeeee;
-    color: #ffffff;
+    background: #efefef;
+    color: #000000;
 }
 a{
     text-decoration: none;
@@ -91,7 +91,7 @@ main{
     width: 900px;
     /* height: 700px; */
     display: block;
-    margin: 50px auto;
+    margin: -350px auto 0 auto;
     background: #ffffff;
     color: #000000;
 }
@@ -168,4 +168,29 @@ main footer .socLinks svg{
     height: 30px;
     fill: white;
     vertical-align: top;
+}
+.downloadResumeWrap{
+    text-align: center;
+}
+.downloadResume{
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #cdcfd1;
+    font-size: 14px;
+    color: #3d4451;
+    font-weight: bold;
+    margin: 32px auto;
+    transition: box-shadow 0.3s;
+}
+.downloadResume:hover{
+    box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.28);
+}
+p.intro{
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: kai;
+    font-size:18px;
+    line-height: 30px;
 }
