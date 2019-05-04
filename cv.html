@@ -199,11 +199,13 @@
             aTags[i].onclick=function(e){
                 e.preventDefault();
                 let aElement=e.currentTarget
-                let aHref=aElement.getAttribute('href')
-                let element=document.querySelector(aHref)
-                let top=element.offsetTop;
-                console.log(top);
-                window.scrollTo(0,top-80)
+                let aHref=aElement.getAttribute('href')//'#siteAbout'
+                if(aHref && aHref.length>1){
+                    let element=document.querySelector(aHref)
+                    let top=element.offsetTop;
+                    console.log(top);
+                    window.scrollTo(0,top-80)
+                }
             }
         }
     </script>
