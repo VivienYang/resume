@@ -1,160 +1,174 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>VivienYang的个人简历</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="mainbox clearfix">
-                <div class="logo fl">
-                    <span class="rs">RS</span>
-                    <span class="card">card</span>
-                </div>
-                <nav class="mynav fr">
-                    <ul class="clearfix">
-                        <li><a href="#" class="active">关于</a></li>
-                        <li><a href="#">技能</a></li>
-                        <li><a href="#">作品</a></li>
-                        <li><a href="#">日历</a></li>
-                        <li><a href="#">联系方式</a></li>
-                        <li><a href="#">其他</a></li>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="utf-8">
+    <title>VivienYang的个人简历</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js"></script>
+</head>
+<body>
+    <div class="loadingWrapper active" id="loadingWrapper">
+        <div class="loading"></div>
+    </div>
+    <header class="topNavBar" id="topNavBar">
+        <div class="mainbox clearfix">
+            <div class="logo fl">
+                <span class="rs">RS</span>
+                <span class="card">card</span>
             </div>
-            
-        </header>
-        <div class="banner">
-            <div class="mask"></div>
-        </div>
-        <main>
-            <div class="maincontent clearfix">
-                <div class="photo fl">
-                    <img src="img/photo.jpg" alt="头像">
-                </div>
-                <div class="userInfo fl">
-                    <span class="hello">
-                        hello
-                        <span class="triangle"></span>
-                    </span>
-                    <h1>我是<strong>Vivien Yang</strong></h1>
-                    <h2>前端开发工程师</h2>
-                    <hr>
-                    <dl class="infolist">
-                        <dt>年龄</dt>
-                        <dd>18</dd>
-                        <dt>城市</dt>
-                        <dd>杭州</dd>
-                        <dt>邮箱</dt>
-                        <dd>vivienyang@foxmail.com</dd>
-                        <dt>手机</dt>
-                        <dd>158888888</dd>
-                    </dl>
-                </div>
-            </div>
-            <footer>
-                <div class="socLinks clearfix">
-                    <a href="https://github.com">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-github"></use>
-                        </svg>
-                    </a>
-                    <a href="https://weibo.com">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-weibo1"></use>
-                        </svg>
-                    </a>
-                    <a href="https://twitter.com">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </div>
-            </footer>
-        </main>
-        <div class="downloadResumeWrap">
-            <a href="1.pdf" target="_blank" class="downloadResume" download="download">下载pdf简历</a>
-        </div>
-        <p class="intro">Vivien Yang，前端开发工程师,两年工作经验，现居杭州，在职看机会中。
-            <br>技能：html5, css3, javascript, react, vue, node
-        </p>
-        <section class="skillBox">
-            <div class="hd">技能</div>
-            <div class="skillsList clearfix">
-                <div class="skillItem">
-                    <h3>HTML 5 & CSS 3</h3>
-                    <div class="progressBar">
-                        <div class="progress" style="width:80%"></div>
-                    </div>
-                </div>
-                <div class="skillItem">
-                    <h3>JavaScript</h3>
-                    <div class="progressBar">
-                        <div class="progress" style="width:70%"></div>
-                    </div>
-                </div>
-                <div class="skillItem">
-                    <h3>jQuery</h3>
-                    <div class="progressBar">
-                        <div class="progress" style="width:70%"></div>
-                    </div>
-                </div>
-                <div class="skillItem">
-                    <h3>Vue.js</h3>
-                    <div class="progressBar">
-                        <div class="progress" style="width:60%"></div>
-                    </div>
-                </div>
-                <div class="skillItem">
-                    <h3>React.js</h3>
-                    <div class="progressBar">
-                        <div class="progress" style="width:50%"></div>
-                    </div>
-                </div>
-                <div class="skillItem">
-                    <h3>Node.js</h3>
-                    <div class="progressBar">
-                        <div class="progress" style="width:30%"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="portfolio">
-            <div class="hd">作品集</div>
-            <nav>
-                <ol class="clearfix">
-                    <li id="portfolio1">所有</li>
-                    <li id="portfolio2">框架</li>
-                    <li id="portfolio3">原生JS&CSS</li>
-                </ol>
-                <div class="portfoliobar state1" id="portfoliobar">
-                    <div class="bar_inner"></div>
-                </div>
+            <nav class="mynav fr">
+                <ul class="clearfix">
+                    <li><a href="#" class="active">关于</a></li>
+                    <li><a href="#">技能</a></li>
+                    <li><a href="#">作品</a></li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
             </nav>
-            <div class="worksList">
-                <div class="works1">
-                    <img src="img/works1.jpg" alt="作品1">
-                </div>
-                <div class="works2">
-                    <img src="img/works2.jpg" alt="作品2">
-                </div>
-                <div class="works3">
-                    <img src="img/works3.jpg" alt="作品3">
+        </div>
+        
+    </header>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main>
+        <div class="maincontent clearfix">
+            <div class="photo fl">
+                <img src="img/photo.jpg" alt="头像">
+            </div>
+            <div class="userInfo fl">
+                <span class="hello">
+                    hello
+                    <span class="triangle"></span>
+                </span>
+                <h1>我是<strong>Vivien Yang</strong></h1>
+                <h2>前端开发工程师</h2>
+                <hr>
+                <dl class="infolist">
+                    <dt>年龄</dt>
+                    <dd>18</dd>
+                    <dt>城市</dt>
+                    <dd>杭州</dd>
+                    <dt>邮箱</dt>
+                    <dd>vivienyang@foxmail.com</dd>
+                    <dt>手机</dt>
+                    <dd>158888888</dd>
+                </dl>
+            </div>
+        </div>
+        <footer>
+            <div class="socLinks clearfix">
+                <a href="https://github.com">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="https://weibo.com">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo1"></use>
+                    </svg>
+                </a>
+                <a href="https://twitter.com">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                </a>
+            </div>
+        </footer>
+    </main>
+    <div class="downloadResumeWrap">
+        <a href="1.pdf" target="_blank" class="downloadResume" download="download">下载pdf简历</a>
+    </div>
+    <p class="intro">Vivien Yang，前端开发工程师,两年工作经验，现居杭州，在职看机会中。
+        <br>技能：html5, css3, javascript, react, vue, node
+    </p>
+    <section class="skillBox">
+        <div class="hd">技能</div>
+        <div class="skillsList clearfix">
+            <div class="skillItem">
+                <h3>HTML 5 & CSS 3</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width:80%"></div>
                 </div>
             </div>
-        </section>
-        <script>
-            document.getElementById('portfolio1').onclick=function(){
-                document.getElementById('portfoliobar').className='portfoliobar state1'
+            <div class="skillItem">
+                <h3>JavaScript</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width:70%"></div>
+                </div>
+            </div>
+            <div class="skillItem">
+                <h3>jQuery</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width:70%"></div>
+                </div>
+            </div>
+            <div class="skillItem">
+                <h3>Vue.js</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width:60%"></div>
+                </div>
+            </div>
+            <div class="skillItem">
+                <h3>React.js</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width:50%"></div>
+                </div>
+            </div>
+            <div class="skillItem">
+                <h3>Node.js</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width:30%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="hd">作品集</div>
+        <nav>
+            <ol class="clearfix">
+                <li id="portfolio1">所有</li>
+                <li id="portfolio2">框架</li>
+                <li id="portfolio3">原生JS&CSS</li>
+            </ol>
+            <div class="portfoliobar state1" id="portfoliobar">
+                <div class="bar_inner"></div>
+            </div>
+        </nav>
+        <div class="worksList">
+            <div class="works1">
+                <img src="img/works1.jpg" alt="作品1">
+            </div>
+            <div class="works2">
+                <img src="img/works2.jpg" alt="作品2">
+            </div>
+            <div class="works3">
+                <img src="img/works3.jpg" alt="作品3">
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('portfolio1').onclick=function(){
+            document.getElementById('portfoliobar').className='portfoliobar state1'
+        }
+        document.getElementById('portfolio2').onclick=function(){
+            document.getElementById('portfoliobar').className='portfoliobar state2'
+        }
+        document.getElementById('portfolio3').onclick=function(){
+            document.getElementById('portfoliobar').className='portfoliobar state3'
+        }
+        setTimeout(function(){
+            document.getElementById('loadingWrapper').classList.remove('active')
+        },1000)
+        window.onscroll=function(x){
+            console.log(window.scrollY);
+            if(window.scrollY>0){
+                topNavBar.classList.add('sticky')
+            }else{
+                topNavBar.classList.remove('sticky')
             }
-            document.getElementById('portfolio2').onclick=function(){
-                document.getElementById('portfoliobar').className='portfoliobar state2'
-            }
-            document.getElementById('portfolio3').onclick=function(){
-                document.getElementById('portfoliobar').className='portfoliobar state3'
-            }
-        </script>
-    </body>
+        }
+    </script>
+</body>
 </html>
