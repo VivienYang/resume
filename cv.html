@@ -18,9 +18,23 @@
             </div>
             <nav class="mynav fr">
                 <ul class="clearfix">
-                    <li><a href="#" class="active">关于</a></li>
-                    <li><a href="#">技能</a></li>
-                    <li><a href="#">作品</a></li>
+                    <li><a href="#siteAbout" class="active">关于</a></li>
+                    <li>
+                        <a href="#siteSkills">技能</a>
+                        <ul class="subMenu">
+                            <li>技能1</li>
+                            <li>技能2</li>
+                            <li>技能3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#siteWorks">作品</a>
+                        <ul class="subMenu">
+                            <li>作品1</li>
+                            <li>作品2</li>
+                            <li>作品3</li>
+                        </ul>
+                    </li>
                     <li><a href="#">日历</a></li>
                     <li><a href="#">联系方式</a></li>
                     <li><a href="#">其他</a></li>
@@ -32,7 +46,7 @@
     <div class="banner">
         <div class="mask"></div>
     </div>
-    <main>
+    <main id="siteAbout">
         <div class="maincontent clearfix">
             <div class="photo fl">
                 <img src="img/photo.jpg" alt="头像">
@@ -83,7 +97,7 @@
     <p class="intro">Vivien Yang，前端开发工程师,两年工作经验，现居杭州，在职看机会中。
         <br>技能：html5, css3, javascript, react, vue, node
     </p>
-    <section class="skillBox">
+    <section class="skillBox" id="siteSkills">
         <div class="hd">技能</div>
         <div class="skillsList clearfix">
             <div class="skillItem">
@@ -124,7 +138,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="siteWorks">
         <div class="hd">作品集</div>
         <nav>
             <ol class="clearfix">
@@ -162,11 +176,34 @@
             document.getElementById('loadingWrapper').classList.remove('active')
         },1000)
         window.onscroll=function(x){
-            console.log(window.scrollY);
             if(window.scrollY>0){
                 topNavBar.classList.add('sticky')
             }else{
                 topNavBar.classList.remove('sticky')
+            }
+        }
+        var liTags=document.querySelectorAll(".mynav > ul > li");
+        for(let i=0;i<liTags.length;i++){
+            let liElement=liTags[i]
+            liElement.onmouseenter=function(e){
+                // console.log(e)
+                e.target.classList.add('active')
+            }
+            liElement.onmouseleave=function(e){
+                // console.log(e)
+                e.target.classList.remove('active')
+            }
+        }
+        var aTags=document.querySelectorAll(".mynav > ul > li > a")
+        for(let i=0;i<aTags.length;i++){
+            aTags[i].onclick=function(e){
+                e.preventDefault();
+                let aElement=e.currentTarget
+                let aHref=aElement.getAttribute('href')
+                let element=document.querySelector(aHref)
+                let top=element.offsetTop;
+                console.log(top);
+                window.scrollTo(0,top-80)
             }
         }
     </script>

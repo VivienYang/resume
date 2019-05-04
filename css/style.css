@@ -23,9 +23,20 @@ a{ text-decoration: none; color: inherit; display: inline-block; }
 .logo span.card{ color: #9a9da2 !important; }
 /* .mynav{ width: 700px; } */
 .mynav ul{ list-style: none; }
-.mynav ul li{ float: left; height: 40px; padding: 5px 15px; }
-.mynav ul li a{ cursor: pointer; height: 40px; line-height: 38px; color: #b7b7b7; }
-.mynav ul li a:hover{ border-bottom: 2px solid #e8676b; }
+.mynav > ul > li{ float: left; margin: 5px 15px; padding:5px 0;position: relative;}
+.mynav > ul > li a{ font-size:14px;cursor: pointer; line-height: 30px; color: #b7b7b7; position: relative;}
+.mynav > ul > li.active a::after{ content: ''; position: absolute; top:100%; left: 0; width: 100%; height: 2px; background: #e8676b; animation: menuSlide .3s linear; }
+@keyframes menuSlide{
+    0%{width:0}
+    100%{width:100%}
+}
+.mynav > ul > li .subMenu{ position: absolute; background: #ffffff; top:100%; right: 0; display: none; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) }
+@keyframes subMenuSlide{
+    0%{margin-right: 100%}
+    100%{margin-right: 0;}
+}
+.mynav > ul > li.active .subMenu{ display: block; animation: subMenuSlide .3s linear; }
+.mynav > ul > li .subMenu li{ padding: 5px 15px; white-space: nowrap; cursor: pointer; }
 .banner{width: 100%; min-width: 1000px; height: 515px; background-image: url('../img/banner.jpg'); background-position: center center; background-size: cover; }
 .banner .mask{ background-color: rgba(0, 0, 0, 0.8); height: 515px; }
 main{ width: 940px; /* height: 700px; */ display: block; margin: -350px auto 0 auto; background: #ffffff; color: #000000; }
