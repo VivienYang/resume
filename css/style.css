@@ -58,8 +58,8 @@ main footer .socLinks svg{ width: 30px; height: 30px; fill: white; vertical-alig
 .downloadResume{ width: 200px; height: 60px; line-height: 60px; border: 1px solid #cdcfd1; font-size: 14px; color: #3d4451; font-weight: bold; margin: 32px auto; transition: box-shadow 0.3s; }
 .downloadResume:hover{ box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.28); }
 p.intro{ width: 940px; margin: 0 auto; text-align: center; font-family: kai; font-size:18px; line-height: 30px; }
-.skillBox,.portfolio{ width: 940px; margin: 0 auto; }
-.skillBox .hd, .portfolio .hd{ text-align: center; color: #3d4451; font-size: 34px; line-height: 1.2; font-weight: 600; margin: 30px auto; }
+.skillBox,.portfolio,.message{ width: 940px; margin: 0 auto; }
+.skillBox .hd, .portfolio .hd, .message .hd{ text-align: center; color: #3d4451; font-size: 34px; line-height: 1.2; font-weight: 600; margin: 30px auto; }
 .skillBox .skillsList{ background: #ffffff; padding: 42px 50px 10px; }
 .skillsList > .skillItem{ width: 48%; float: left; }
 .skillsList > .skillItem:nth-child(even){ float: right; }
@@ -82,3 +82,20 @@ p.intro{ width: 940px; margin: 0 auto; text-align: center; font-family: kai; fon
 .worksList > div.works1{ left: 0; top: 0; }
 .worksList > div.works2{ left: 646px; top: 0; }
 .worksList > div.works3{ left: 646px; top: 298px; }
+.message{
+    
+}
+.message > ol.messageList{
+    background: #ffffff;
+    box-shadow: 2px 2px 1px #dddddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.message > ol.messageList > li{
+    list-style: none;
+    padding: 15px;
+    border-bottom:1px solid #dddddd;
+}
+.message .myForm{
+    padding: 16px;
+}

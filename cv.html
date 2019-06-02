@@ -162,6 +162,19 @@
             </div>
         </div>
     </section>
+    <section class="message" id="siteMessage">
+        <div class="hd">留言</div>
+        <ol class="messageList"></ol>
+        <form class="myForm">
+            <label for="user_name">用户名</label>
+            <input type="text" name="user_name" class="user_name">
+            <label for="user_message">留言</label>
+            <input type="text" name="user_message" class="user_message">
+            <input type="submit" value="留言">
+        </form>
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js"></script>
+    <script src="js/message.js"></script>
     <script>
         document.getElementById('portfolio1').onclick=function(){
             document.getElementById('portfoliobar').className='portfoliobar state1'
@@ -186,11 +199,9 @@
         for(let i=0;i<liTags.length;i++){
             let liElement=liTags[i]
             liElement.onmouseenter=function(e){
-                // console.log(e)
                 e.target.classList.add('active')
             }
             liElement.onmouseleave=function(e){
-                // console.log(e)
                 e.target.classList.remove('active')
             }
         }
@@ -203,7 +214,6 @@
                 if(aHref && aHref.length>1){
                     let element=document.querySelector(aHref)
                     let top=element.offsetTop;
-                    console.log(top);
                     window.scrollTo(0,top-80)
                 }
             }
