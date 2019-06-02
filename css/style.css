@@ -99,3 +99,11 @@ p.intro{ width: 940px; margin: 0 auto; text-align: center; font-family: kai; fon
 .message .myForm{
     padding: 16px;
 }
+.swiper-container{
+    width: 600px;
+    height: 400px;
+}
+.swiper-container .swiper-slide img{
+    width: 600px;
+    height: 400px;
+}
